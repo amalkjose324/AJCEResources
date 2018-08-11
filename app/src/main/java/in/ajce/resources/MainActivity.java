@@ -1,15 +1,12 @@
 package in.ajce.resources;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -136,8 +133,8 @@ public class MainActivity extends AppCompatActivity
                     TabResources tabResources = new TabResources();
                     return tabResources;
                 case 2:
-                    TabNotifications tabNotifications = new TabNotifications();
-                    return tabNotifications;
+                    TabAlerts tabAlerts = new TabAlerts();
+                    return tabAlerts;
                 default:
                     return null;
             }
